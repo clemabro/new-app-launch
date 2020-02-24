@@ -17,7 +17,6 @@ p {
 }
 
 html {
-<<<<<<< HEAD
   scroll-behavior: smooth;
 }
 
@@ -61,8 +60,6 @@ html {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
-=======
-    scroll-behavior: smooth;
 }
 
 .imgHover{
@@ -76,5 +73,3 @@ html {
 
 .modal-backdrop {
     opacity: 0.5;
->>>>>>> 2caf7767e08236342c78045b7b29f4e98c4a408f
-}
