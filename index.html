@@ -24,7 +24,7 @@
         <h1 class="w3-xlarge">Commande dès maintenant</h1>
         <hr class="w3-opacity">
         <p>Simple à installer : Clique sur télécharger !</p>
-        <p><a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-green w3-round" >Télécharger <i class="fab fa-android"></i> <i class="fab fa-apple"></i></button></a></p>
+        <p><a href="#appH1" style="text-decoration: none;"><button class="hvr-bob w3-button w3-block w3-green w3-round" >Télécharger <i class="fab fa-android"></i> <i class="fab fa-apple"></i></button></a></p>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
         <h1 class="w3-xlarge w3-text-red"><b>CLIQUE!</b> C'est facile et rapide</h1>
         <hr class="w3-opacity">
         <p>Choisis ton menu !</p>
-        <p><a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-red w3-round" href="#app">Télécharger <i class="fab fa-android"></i> <i class="fab fa-apple"></i></button></a></p>
+        <p><a href="#appH1" style="text-decoration: none;"><button class="hvr-bob w3-button w3-block w3-red w3-round" href="#app">Télécharger <i class="fab fa-android"></i> <i class="fab fa-apple"></i></button></a></p>
       </div>
     </div>
   </div>
@@ -46,14 +46,15 @@
         <h1 class="w3-xlarge">L'application intelligente</h1>
         <hr class="w3-opacity">
         <p>Personnalise ton burger dès maintenant</p>
-        <p><a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-indigo w3-round" href="#app">Télécharger <i class="fab fa-android"></i> <i class="fab fa-apple"></i></button></a></p>
+        <p><a href="#appH1" style="text-decoration: none;"><button class="hvr-bob w3-button w3-block w3-indigo w3-round" href="#app">Télécharger <i class="fab fa-android"></i> <i class="fab fa-apple"></i></button></a></p>
       </div>
     </div>
   </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Regarde ça<i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey hvr-icon-wobble-horizontal" onclick="plusDivs(1)">Regarde ça <i class="fa fa-angle-right hvr-icon"></i></a>
   <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Regarde ça <i class="fa fa-angle-right"></i></a>
 </header>
 
+<a href="javascript:" id="return-to-top" style="padding-left: 2px;;"><i class="fas fa-chevron-up"></i></a>
 <!-- The App Section -->
 <div class="w3-padding-64 w3-white">
   <div class="w3-row-padding">
@@ -103,19 +104,19 @@
 
   <div class="w3-row" style="margin-top:64px">
     <div class="w3-col s3">
-      <i class="fa fa-map-marker w3-jumbo"></i>
+      <a class="hvr-icon-drop"><i class="fa fa-map-marker w3-jumbo hvr-icon"></i></a>
       <p>Localisation</p>
     </div>
     <div class="w3-col s3">
-      <i class="fa fa-credit-card w3-jumbo"></i>
+      <a class="hvr-icon-fade"><i class="fa fa-credit-card w3-jumbo hvr-icon"></i></a>
     <p>Fidélité</p>
     </div>
     <div class="w3-col s3">
-      <i class="fa fa-bicycle w3-jumbo"></i>
+      <a class="hvr-icon-wobble-horizontal"><i class="fa fa-bicycle w3-jumbo hvr-icon"></i></a>
       <p>Livraison</p>
     </div>
     <div class="w3-col s3">
-      <i class="fa fa-grin-hearts w3-jumbo"></i>
+      <a class="hvr-icon-pulse-grow"><i class="fa fa-grin-hearts hvr-icon w3-jumbo"></i></a>
       <p>Satisfaction</p>
     </div>
   </div>
@@ -191,6 +192,19 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
 </script>
 
 </body>
