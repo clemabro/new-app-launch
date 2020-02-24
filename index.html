@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>New app launch</title>
+<title>BURGER KING</title>
+<link rel="icon" href="./images/logoBK.jpg" type="image/icon type">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,46 +10,47 @@
 <link href="https://db.onlinewebfonts.com/c/98c1d54a54c44dfe6f53f226cc9ff479?family=Block+Berthold+Condensed" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 <link href="./style.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body class="w3-content w3-black" style="max-width:1500px;">
   <script src="https://kit.fontawesome.com/a3678cc274.js" crossorigin="anonymous"></script>
 <!-- Header with Slideshow -->
 <header class="w3-display-container w3-center">
-  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" href="#app">Télécharger <i class="fa fa-android"></i> <i class="fa fa-apple"></i></i></button></a>
   <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="./images/header-image.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <img class="w3-image" src="./images/Image1.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
     <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
       <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
         <h1 class="w3-xlarge">Take photos with our app</h1>
         <hr class="w3-opacity">
         <p>Super simple installment: free of charge</p>
-        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+        <p><a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-green w3-round" >Télécharger <i class="fa fa-android"></i> <i class="fa fa-apple"></i></button></a></p>
       </div>
     </div>
   </div>
   <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="./images/burger.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+    <img class="w3-image" src="./images/Image2.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
     <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
       <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
         <h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Fast and Easy</h1>
         <hr class="w3-opacity">
         <p>Choose from thousands of features</p>
-        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+        <p><a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-red w3-round" href="#app">Télécharger <i class="fa fa-android"></i> <i class="fa fa-apple"></i></button></a></p>
       </div>
     </div>
   </div>
   <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="./images/logoBK.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+    <img class="w3-image" src="./images/Image3.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
     <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
       <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
         <h1 class="w3-xlarge">Smart Design</h1>
         <hr class="w3-opacity">
         <p>Customize photos as you go</p>
-        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+        <p><a href="#appH1" style="text-decoration: none;"><button class="w3-button w3-block w3-indigo w3-round" href="#app">Télécharger <i class="fa fa-android"></i> <i class="fa fa-apple"></i></button></a></p>
       </div>
     </div>
   </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Regarde ça <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Regarde ça <i class="fa fa-angle-right"></i></a>
 </header>
 
 <!-- The App Section -->
@@ -59,16 +61,17 @@
       <h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
       <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-download"></i> Download Application
+      <a href="#appH1" style="text-decoration: none;">	
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small">
+        <i class="fa fa-download"></i> Télécharger l'application
       </button>
       <p>Available for <i class="fab fa-android w3-xlarge w3-text-green"></i> <i class="fab fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
     </div>
     <div class="w3-col l4 m6">
       <img src="./images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
       <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
+        <button class="w3-button w3-block w3-padding-large">
+          <i class="fa fa-download"></i> Télécharger l'application
         </button>
         <img src="./images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
       </div>
@@ -118,7 +121,7 @@
 </div>
 
 <!-- Pricing Section -->
-<div class="w3-padding-64 w3-center w3-white">
+<div class="w3-padding-64 w3-center w3-white" id="appH1">
   <h1 class="w3-jumbo"><b>Application Burger King.</b></h1>
   <p class="w3-large">Télécharger l'application Burger king dès maintenant.</p>
   <div class="w3-row-padding" style="margin-top:64px">
