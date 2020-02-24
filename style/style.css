@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.social-icon {
+	color: black!important;
+}
+
 /*Pour retourner en haut*/
 #return-to-top {
     position: fixed;
@@ -72,4 +76,5 @@ html {
 }
 
 .modal-backdrop {
-    opacity: 0.5;
+	opacity: 0.5;
+}
