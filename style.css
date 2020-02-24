@@ -12,4 +12,10 @@ p {
 	font-family: "Roboto Condensed";	
 }
 
-.mySlides {display: none;}
+.mySlides {
+	display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
