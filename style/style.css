@@ -1,22 +1,23 @@
 body,h1,h2,h3,h4,h5 {
-	font-family: "Block Berthold Condensed";
+    font-family: "Block Berthold Condensed";
 }
 body {
-	font-size: 16px;
+    font-size: 16px;
 }
 img {
-	margin-bottom: -8px;
+    margin-bottom: -8px;
 }
 
 p {
-	font-family: "Roboto Condensed";	
+    font-family: "Roboto Condensed";	
 }
 
 .mySlides {
-	display: none;
+    display: none;
 }
 
 html {
+<<<<<<< HEAD
   scroll-behavior: smooth;
 }
 
@@ -60,4 +61,20 @@ html {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+=======
+    scroll-behavior: smooth;
+}
+
+.imgHover{
+    width:80px;
+    transition: 0.2s;
+}
+.imgHover:hover{
+    width:100px;
+    transition: 0.2s;
+}
+
+.modal-backdrop {
+    opacity: 0.5;
+>>>>>>> 2caf7767e08236342c78045b7b29f4e98c4a408f
 }
