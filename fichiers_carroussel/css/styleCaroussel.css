@@ -26,9 +26,9 @@ Author URI: http://xpeedstudio.com
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html,
+/* html,
 body {
-    /*background:url(../images/bodybg.png) repayet-y;*/
+    /*background:url(../images/bodybg.png) repayet-y;
     background-image: url("../images/bodybg.png");
     background-repeat: repeat-y;
     font-size: 16px;
@@ -40,7 +40,7 @@ body {
     font-weight: 400;
     width:100%;
     font-family: 'Ubuntu', sans-serif;
-}
+} */
 
 /*------------------------------------------------------------------*/
 /*   IE10 in Windows 8 and Windows Phone 8 Bug fix
