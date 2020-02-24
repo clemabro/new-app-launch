@@ -8,4 +8,8 @@ img {
 	margin-bottom: -8px;
 }
 
+p {
+	font-family: "Roboto Condensed";	
+}
+
 .mySlides {display: none;}
