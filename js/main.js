@@ -12,6 +12,8 @@ $(document).ready(function() {
     $('#featuresSection').css('opacity','1');
     $('#footer').css('opacity','1');
     });
+
+    setInterval(function(){plusDivs(1)}, 5000);
 });
 // Slideshow
 var slideIndex = 1;
