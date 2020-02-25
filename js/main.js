@@ -11,6 +11,7 @@ $(document).ready(function() {
     $('#appH1').css('opacity','1');
     $('#featuresSection').css('opacity','1');
     $('#footer').css('opacity','1');
+    $('#logoTOP').css('opacity','1');
     });
 
     setInterval(function(){plusDivs(1)}, 5000);
