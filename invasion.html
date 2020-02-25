@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<title>BURGER KING</title>
+<link rel="icon" href="./images/logoBK.jpg" type="image/icon type">
+
+<script src="./js/invasion.js" type="text/javascript"></script>
+<link href="https://db.onlinewebfonts.com/c/98c1d54a54c44dfe6f53f226cc9ff479?family=Block+Berthold+Condensed" rel="stylesheet" type="text/css"/>
+<link href="./style/invasion.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div id='dvg_jeux'>
+ 
+	<div id='dg_point'>
+		<p>Score : <span id='point'>0</span></p>
+		<p>Vie : <span id='nbr_vie'>3</span></p>
+	</div>
+  
+ 	<div id='menu' class = "game_over">
+ 	<div onclick='c_parti(this,"vie")' style="margin-top: 10%;">GO !</div>
+		<span>
+			<input type='hidden' id='nbr_soucoupe' value=15 style='width:20px;'></input>
+			
+			<input id='vt_aleatoire' type='hidden' style='width:20px;'></input>
+			
+			<input type='hidden' id='laser_auto' checked='checked' style='width:20px;'></input>
+			
+			<input type='hidden' id='nbr_vitesse' value=4 style='width:20px;'></input></span>
+			
+			<input type='hidden' id='duree_partie' value=3 style='width:20px;'></input>
+		</span>
+	</div>
+</div>
+</body>
+</html>
