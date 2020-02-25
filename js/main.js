@@ -47,3 +47,14 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+function afficherImage(id){
+if(id=="carteBK")
+{
+    $("#imgToInsert").attr("src","./images/carteBK.jpg");
+    $("#myModalImg").css("display", "block");
+}
+    $('.close').on('click', function(){
+        $("#myModalImg").css("display", "none");
+    })
+};
