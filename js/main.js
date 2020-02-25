@@ -1,3 +1,5 @@
+var interval;
+
 $(document).ready(function() {
     //Open the modal choice restaurant
     $('#myModal').show();
@@ -11,9 +13,10 @@ $(document).ready(function() {
     $('#appH1').css('opacity','1');
     $('#featuresSection').css('opacity','1');
     $('#footer').css('opacity','1');
+    $('#logoTOP').css('opacity','1');
     });
 
-    setInterval(function(){plusDivs(1)}, 5000);
+    interval = setInterval(function(){plusDivs(1)}, 5000);
 });
 // Slideshow
 var slideIndex = 1;
@@ -31,7 +34,9 @@ function showDivs(n) {
     for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
     }
-    x[slideIndex-1].style.display = "block";  
+    x[slideIndex-1].style.display = "block";
+    clearInterval(interval);
+    interval = setInterval(function(){plusDivs(1)}, 5000);
 }
 
 $(window).scroll(function() {
