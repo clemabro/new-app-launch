@@ -54,11 +54,20 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 
 function afficherImage(id){
-if(id=="carteBK")
-{
-    $("#imgToInsert").attr("src","./images/carteBK.jpg");
-    $("#myModalImg").css("display", "block");
-}
+    if(id == "carteBK")
+    {
+        $("#imgToInsert").attr("src","./images/carteBK.jpg");
+        $("#myModalImg").css("display", "block");
+    } else if (id == 'livraison') {
+        $("#imgToInsert").attr("src","./images/livraison.jpg");
+        $("#myModalImg").css("display", "block");
+    } else if (id == 'fidelite') {
+        $("#imgToInsert").attr("src","./images/fidelite.jpg");
+        $("#myModalImg").css("display", "block");
+    } else if (id == 'satisfaction') {
+        $("#imgToInsert").attr("src","./images/satisfaction.jpg");
+        $("#myModalImg").css("display", "block");
+    }
     $('.close').on('click', function(){
         $("#myModalImg").css("display", "none");
     })
